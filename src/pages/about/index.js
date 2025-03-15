@@ -80,7 +80,7 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
+          {/* <Col lang="5">
             <h3 className="color_sec py-4">services</h3>
           </Col>
           <Col lg="7">
@@ -92,7 +92,7 @@ export const About = () => {
                 </div>
               );
             })}
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </HelmetProvider>
