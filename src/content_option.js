@@ -5,11 +5,12 @@ const meta = {
 };
 
 const introdata = {
-    title: "I’m Anuragi Thapliya",
+    title: "Hi! I'm Anuragi Thapliya",
     animated: {
-        first: "I am a robotics engineer",
-        second: "I am curious about industrial automation",
-        third: "I want to learn about future robotic applications",
+        first: "I'm a robotics engineer",
+        second: "I'm a computer scientist",
+        third: "I'm a classical pianist",
+        fourth: "I'm a plants enthusiast"
     },
     description: "Welcome to my portfolio! I am a recent robotics engineering graduate. I want to design intelligent sytems that can make a difference and be accessible to everyone.",
     your_img_url: "/portfoliopics/headshot.jpg",

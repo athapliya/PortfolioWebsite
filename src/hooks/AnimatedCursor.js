@@ -136,21 +136,21 @@ function CursorCore({
     }, [])
   
     // Outer Cursor Animation Delay
-    // const animateOuterCursor = useCallback(
-    //   (time) => {
-    //     if (previousTimeRef.current !== undefined) {
-    //       coords.x += (endX.current - coords.x) / trailingSpeed
-    //       coords.y += (endY.current - coords.y) / trailingSpeed
-    //       cursorOuterRef.current.style.top = `${coords.y}px`
-    //       cursorOuterRef.current.style.left = `${coords.x}px`
-    //     }
-    //     previousTimeRef.current = time
-    //     requestRef.current = requestAnimationFrame(animateOuterCursor)
-    //   },
-    //   [requestRef] // eslint-disable-line
-    // )
+    const animateOuterCursor = useCallback(
+      (time) => {
+        if (previousTimeRef.current !== undefined) {
+          coords.x += (endX.current - coords.x) / trailingSpeed
+          coords.y += (endY.current - coords.y) / trailingSpeed
+          cursorOuterRef.current.style.top = `${coords.y}px`
+          cursorOuterRef.current.style.left = `${coords.x}px`
+        }
+        previousTimeRef.current = time
+        requestRef.current = requestAnimationFrame(animateOuterCursor)
+      },
+      [requestRef] // eslint-disable-line
+    )
   
-    // // RAF for animateOuterCursor
+    // RAF for animateOuterCursor
     // useEffect(() => {
     //   requestRef.current = requestAnimationFrame(animateOuterCursor)
     //   return () => cancelAnimationFrame(requestRef.current)
@@ -195,7 +195,7 @@ function CursorCore({
     useEffect(() => {
       if (isVisible) {
         cursorInnerRef.current.style.opacity = 1
-        cursorOuterRef.current.style.opacity = 1
+        // cursorOuterRef.current.style.opacity = 1
       } else {
         cursorInnerRef.current.style.opacity = 0
         cursorOuterRef.current.style.opacity = 0
