@@ -18,7 +18,7 @@ const introdata = {
 
 const dataabout = {
     title: "About myself",
-    aboutme: "I graduated Worcester Polytechnic Institute (WPI) in Spring 2025 with a Bachelor of Science in Robotics Engineering and a minor in Computer Science.",
+    aboutme: "I graduated Worcester Polytechnic Institute (WPI) in Spring 2025 with a Bachelor of Science in Robotics Engineering and a minor in Computer Science. I am passionate about designing intelligent systems that can make a difference and be accessible to everyone. I have experience in robotics, computer vision, machine learning, and software development. In my free time, I enjoy playing the piano, hiking, and taking care of my plants.",
 };
 const worktimeline = [{
         jobtitle: "Product Engineer Intern",
