@@ -12,7 +12,7 @@ const introdata = {
         third: "I'm a classical pianist",
         fourth: "I'm a plants enthusiast"
     },
-    description: "Welcome to my website! I am a recent robotics engineering graduate. I want to design intelligent sytems that can make a difference and be accessible to everyone.",
+    description: "Welcome to my website! I am a recent robotics engineering graduate. I want to design intelligent systems that can make a difference and be accessible to everyone.",
     your_img_url: "/portfoliopics/headshot.jpg",
 };
 
